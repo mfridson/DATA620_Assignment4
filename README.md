@@ -14,7 +14,7 @@ The key categorical variable here is **player position** (Guard, Forward, Center
 
 1. **Pull player rosters by season** using the `/players` and `/stats` endpoints from balldontlie. The stats endpoint returns per-game data that includes team and season identifiers, which is what we need to establish co-occurrence.
 
-2. **Construct an edge list** in R by iterating through each team-season combination and creating pairwise connections between all players who appeared on that roster. Players who were traded mid-season would have edges to teammates on multiple teams, which actually makes the network more interesting since those players become natural bridges.
+2. **Construct an edge list** in Python by iterating through each team-season combination and creating pairwise connections between all players who appeared on that roster. Players who were traded mid-season would have edges to teammates on multiple teams, which actually makes the network more interesting since those players become natural bridges.
 
 3. **Load into igraph** using `graph_from_data_frame()`, attaching position as a vertex attribute. From there, computing degree, betweenness, closeness, and eigenvector centrality is straightforward with igraph's built-in functions.
 
