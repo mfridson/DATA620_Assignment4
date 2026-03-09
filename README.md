@@ -1,4 +1,4 @@
-# Week 4 Assignment: Centrality Measures
+# Project 1
 
 ## NBA Player Co-Occurrence Network Analysis
 
